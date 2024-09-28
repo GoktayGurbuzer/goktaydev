@@ -24,8 +24,8 @@ const Header = () => {
                     />
                 </div>
                 <div className="p-3 flex flex-row gap-2 mx-auto md:mx-0">
-                    <button className="px-6 py-2 text-sm text-white font-semibold rounded-full border border-orange-200 flex flex-row items-center gap-2"><FaSquareXTwitter /> Twitter</button>
-                    <button className="px-6 py-2 text-sm text-white font-semibold rounded-full border border-orange-200 flex flex-row items-center gap-2"><FaLinkedin /> LinkedIn</button>
+                    <a href="https://twitter.com/GoktayGurbuzer" target="_blank" className="px-6 py-2 text-sm text-white font-semibold rounded-full border border-orange-200 flex flex-row items-center gap-2"><FaSquareXTwitter /> Twitter</a>
+                    <a href="https://www.linkedin.com/in/goktaygurbuzer/" target="_blank" className="px-6 py-2 text-sm text-white font-semibold rounded-full border border-orange-200 flex flex-row items-center gap-2"><FaLinkedin /> LinkedIn</a>
                 </div>
             </div>
             <div className="pt-2 leading-7">
