@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import data from '../Data/flow'; // Veriyi import ediyoruz
 
 export default function Akis() {
@@ -16,7 +17,13 @@ export default function Akis() {
                 posts.map(post => (
                     <div key={post.id} className="bg-gray-900 p-6 rounded-xl shadow-lg">
                         <div className="flex items-center space-x-4">
-                            <img src={post.image} alt={post.username} className="w-16 h-16 rounded-full" />
+                            <Image
+                                src={post.image}
+                                alt={post.username}
+                                width={64}
+                                height={64}
+                                className="rounded-full"
+                            />
                             <div>
                                 <h2 className="text-xl text-white font-bold">{post.title}</h2>
                                 <p className="text-gray-400">{post.username} • {post.date}</p>

@@ -3,7 +3,7 @@ export default function Hakkimda() {
         <section id="hakkimda">
             <h2 className="text-2xl font-bold mb-4">Kim Bu Göktay?</h2>
             <div className="leading-relaxed text-lg mb-6">
-                <p className="py-4">Merhaba! Ben Göktay Gürbüzer, İstanbul'da yaşayan freelance bir Full-stack Geliştiriciyim. 2015
+                <p className="py-4">Merhaba! Ben Göktay Gürbüzer, İstanbul&apos;da yaşayan freelance bir Full-stack Geliştiriciyim. 2015
                     yılından bu yana yazılım dünyasında aktif olarak yer alıyorum ve bu süreçte modern web teknolojileri
                     üzerinde uzmanlaştım. <b>Node.js, Next.js, React.js ve PostgreSQL</b> gibi en yeni ve güçlü araçlarla
                     projeler geliştiriyor, müşterilerime ölçeklenebilir, güvenli ve performanslı çözümler sunuyorum.</p>
