@@ -1,12 +1,14 @@
+"use client"
+
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import data from '../Data/flow'; // Veriyi import ediyoruz
+import data from '../Data/flow';
 
 export default function Akis() {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        // Verileri id değerine göre büyükten küçüğe sıralıyoruz
+        // data array'ini kopyalayıp id değerine göre ters sıralama
         const sortedData = [...data].sort((a, b) => b.id - a.id);
         setPosts(sortedData);
     }, []);
@@ -30,10 +32,9 @@ export default function Akis() {
                                 <p className="text-green-500">{post.feeling}</p>
                             </div>
                         </div>
-                        <p className="mt-4 text-gray-300">{post.content}</p>
+                        <p className="mt-4 text-gray-300" dangerouslySetInnerHTML={{ __html: post.content }}></p>
 
-                        {/* Koşullu olarak Read More linkini gösteriyoruz */}
-                        {post.article_link && (
+                        {post.article_link && post.article_link.startsWith('http') && (
                             <a href={post.article_link} className="text-blue-400 hover:underline">
                                 Read more
                             </a>
