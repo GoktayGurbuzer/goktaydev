@@ -23,7 +23,7 @@ export default function Home() {
                               <p className="text-green-500">{post.feeling}</p>
                           </div>
                       </div>
-                      <p className="mt-4 text-gray-300">dangerouslySetInnerHTML={{ __html: post.content }}</p>
+                      <p className="mt-4 text-gray-300" dangerouslySetInnerHTML={{ __html: post.content }}></p>
 
                       {/* Koşullu olarak Read More linkini gösteriyoruz */}
                       {post.article_link && (
