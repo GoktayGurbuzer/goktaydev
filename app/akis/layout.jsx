@@ -5,7 +5,7 @@ export const metadata = {
     keywords: 'freelance full-stack developer, Node.js developer, React.js developer, İstanbul yazılım geliştirici, tam yığın yazılım, web geliştirme, mobil geliştirme',
 
     // Canonical URL
-    canonical: 'https://goktay.dev/akis',
+    canonical: 'https://goktay.dev/',
 
     // Robots Tag
     robots: 'index, follow',

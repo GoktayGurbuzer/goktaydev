@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/app/Components/Header";
 import Footer from "@/app/Components/Footer";
 import Menu from "@/app/Components/Menu";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,15 +23,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="tr-TR">
+      <html lang="tr-TR">
       <body
-        className={`${inter.className} antialiased container max-w-screen-md mx-auto`}
+          className={`${inter.className} antialiased container max-w-screen-md mx-auto`}
       >
-      <Header />
-      <Menu />
-        <main>{children}</main>
-      <Footer />
+      <GoogleTagManager gtmId="GTM-WHW6C3T6" />
+      <Header/>
+      <Menu/>
+        {children}
+      <Footer/>
       </body>
-    </html>
+      </html>
   );
 }
