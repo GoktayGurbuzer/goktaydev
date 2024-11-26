@@ -4,6 +4,7 @@ import Services from "./Services";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import Faq from "./Faq";
+import Blog from "./Blog";
 import Link from "next/link";
 import Image from "next/image";
 export default function Home2({ onePage = false, dark = false }) {
@@ -185,13 +186,24 @@ export default function Home2({ onePage = false, dark = false }) {
       <hr
         className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}
       />
-      <section
-        className={`page-section  scrollSpysection  ${
-          dark ? "bg-dark-1 light-content" : ""
-        } `}
-        id="contact"
-      >
-        <Contact />
+        <section
+            className={`page-section  scrollSpysection  ${
+                dark ? "bg-dark-1 light-content" : ""
+            } `}
+            id="blog"
+        >
+            <Blog/>
+        </section>
+        <hr
+            className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}
+        />
+        <section
+            className={`page-section  scrollSpysection  ${
+                dark ? "bg-dark-1 light-content" : ""
+            } `}
+            id="contact"
+        >
+            <Contact />
       </section>
     </>
   );
