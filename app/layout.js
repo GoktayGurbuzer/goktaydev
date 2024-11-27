@@ -7,12 +7,12 @@ import "swiper/css/effect-fade";
 import "react-modal-video/css/modal-video.css";
 import "photoswipe/dist/photoswipe.css";
 import { usePathname } from "next/navigation";
-import { parallaxMouseMovement, parallaxScroll } from "@/utlis/parallax";
+import { parallaxMouseMovement, parallaxScroll } from "../utils/parallax"
 import { GoogleTagManager } from '@next/third-parties/google';
 
 import "tippy.js/dist/tippy.css";
-import { init_wow } from "@/utlis/initWowjs";
-import { headerChangeOnScroll } from "@/utlis/changeHeaderOnScroll";
+import { init_wow } from "@/utils/initWowjs";
+import { headerChangeOnScroll } from "../utils/changeHeaderOnScroll";
 
 export default function RootLayout({ children }) {
   const path = usePathname();
