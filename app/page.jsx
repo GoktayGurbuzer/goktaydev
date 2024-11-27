@@ -13,10 +13,35 @@ const ParallaxContainer = dynamic(
     }
 );
 export const metadata = {
-  title:
+    title:
       "Full Stack Web Developer | Göktay - Freelance Web Çözümler",
-  description:
+    description:
       "İstanbul merkezli Full Stack Web Developer Göktay. Özel web siteleri, sistem entegrasyonları, SEO ve Google Ads çözümleriyle projelerinize değer katıyorum.",
+    keywords: ["web geliştirme", "yazılım", "Göktay Gürbüzer", "portföy"],
+    authors: [{ name: "Göktay Gürbüzer", url: "https://goktay.dev" }],
+    publisher: "Göktay Gürbüzer",
+    robots: {
+        index: true,
+        follow: true,
+    },
+    openGraph: {
+        type: "website",
+        locale: "tr_TR",
+        url: "https://goktay.dev",
+        title: "Full Stack Web Developer | Göktay - Freelance Web Çözümler",
+        description: "İstanbul merkezli Full Stack Web Developer Göktay. Özel web siteleri, sistem entegrasyonları, SEO ve Google Ads çözümleriyle projelerinize değer katıyorum.",
+        images: [
+            {
+                url: "https://goktay.dev/72-saatte-web-sitesi-teslimati.png",
+                width: 1200,
+                height: 630,
+                alt: "Göktay Gürbüzer'in Web Sitesi Görseli",
+            },
+        ],
+    },
+    alternates: {
+        canonical: "https://goktay.dev",
+    },
 };
 export default function Home2MainDemoMultiPageDark() {
   return (

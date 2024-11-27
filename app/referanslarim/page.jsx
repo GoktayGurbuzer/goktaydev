@@ -1,5 +1,9 @@
 import Footer5 from "@/components/footers/Footer5";
-
+import AnimatedText from "@/components/common/AnimatedText";
+import {boldMultipageDark} from "@/data/menu";
+import Portfolio from "@/components/portfolio/Portfolio2";
+import Header2 from "@/components/headers/Header2";
+import React from "react";
 import dynamic from "next/dynamic";
 
 const ParallaxContainer = dynamic(
@@ -9,17 +13,37 @@ const ParallaxContainer = dynamic(
     }
 );
 
-import AnimatedText from "@/components/common/AnimatedText";
-import {boldMultipageDark} from "@/data/menu";
-import Portfolio from "@/components/portfolio/Portfolio2";
-import Header2 from "@/components/headers/Header2";
-import React from "react";
-
 export const metadata = {
     title:
         "Referanslarım | Göktay - Tam Yığın Web Geliştirici",
     description:
         "Tamamladığım projelere göz atın. Web sitesi geliştirme, SEO ve dijital çözümlerle iş ortaklarımın hedeflerini gerçeğe dönüştürdüğüm referanslarım burada.",
+    keywords: ["Göktay Gürbüzer", "referanslar", "projeler", "müşteri yorumları", "yazılım projeleri"],
+    authors: [{ name: "Göktay Gürbüzer", url: "https://goktay.dev" }],
+    publisher: "Göktay Gürbüzer",
+    robots: {
+        index: true,
+        follow: true,
+    },
+    openGraph: {
+        type: "website",
+        locale: "tr_TR",
+        url: "https://goktay.dev/referanslarim",
+        title: "Göktay Gürbüzer - Referanslarım",
+        description:
+            "Göktay Gürbüzer'in çalıştığı projeler ve müşteri referanslarını inceleyin. Kaliteli yazılım çözümleriyle memnun müşteriler.",
+        images: [
+            {
+                url: "https://goktay.dev/72-saatte-web-sitesi-teslimati.png",
+                width: 1200,
+                height: 630,
+                alt: "Göktay Gürbüzer - Referanslar",
+            },
+        ],
+    },
+    alternates: {
+        canonical: "https://goktay.dev/referanslarim",
+    },
 };
 export default function MainPortfolioPageWide2ColDark() {
     return (

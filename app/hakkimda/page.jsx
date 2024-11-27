@@ -3,7 +3,7 @@ import Header2 from "@/components/headers/Header2";
 import Experience from "@/components/homes/home-2/Experience";
 import { education } from "@/data/education";
 import { numberData } from "@/data/facts";
-
+import { Metadata } from "next";
 import { boldMultipageDark } from "@/data/menu";
 import dynamic from "next/dynamic";
 import Image from "next/image";
@@ -21,6 +21,31 @@ export const metadata = {
     "Hakkımda | Göktay - Tam Yığın Web Geliştirici",
   description:
     "Ben Göktay, İstanbul’da yaşayan bir Tam Yığın Web Geliştiricisiyim. Modern teknolojilerle özelleştirilmiş web çözümleri sunuyor, projeleriniz için yaratıcı ve performans odaklı çözümler üretiyorum.",
+  keywords: ["Göktay Gürbüzer", "hakkımda", "yazılım kariyeri", "web geliştirme", "portföy"],
+  authors: [{ name: "Göktay Gürbüzer", url: "https://goktay.dev" }],
+  publisher: "Göktay Gürbüzer",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "profile",
+    locale: "tr_TR",
+    url: "https://goktay.dev/hakkimda",
+    title: "Göktay Gürbüzer - Hakkımda",
+    description: "Yazılım geliştirici Göktay Gürbüzer'in kariyeri, projeleri ve hedefleri hakkında bilgi alın.",
+    images: [
+      {
+        url: "https://goktay.dev/72-saatte-web-sitesi-teslimati.png",
+        width: 1200,
+        height: 630,
+        alt: "Göktay Gürbüzer Hakkında",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://goktay.dev/hakkimda",
+  },
 };
 const onePage = false;
 const dark = true;

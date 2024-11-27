@@ -1,7 +1,11 @@
-import Footer1 from "@/components/footers/Footer1";
-
+import React from "react";
+import Faq from "@/components/common/Faq";
+import Contact from "@/components/homes/home-5/Contact";
+import {boldMultipageDark} from "@/data/menu";
+import Header2 from "@/components/headers/Header2";
+import Footer5 from "@/components/footers/Footer5";
 import dynamic from "next/dynamic";
-
+import { Metadata } from "next";
 const ParallaxContainer = dynamic(
   () => import("@/components/common/ParallaxContainer"),
   {
@@ -9,22 +13,38 @@ const ParallaxContainer = dynamic(
   }
 );
 
-import Header1Multipage from "@/components/headers/Header1Multipage";
-
-import React from "react";
-
-import Faq from "@/components/common/Faq";
-import Contact from "@/components/homes/home-5/Contact";
-import Map from "@/components/common/Map";
-import {boldMultipageDark, menuItemsDark} from "@/data/menu";
-import Header2 from "@/components/headers/Header2";
-import Footer5 from "@/components/footers/Footer5";
 export const metadata = {
   title:
     "İletişim | Göktay - Web Geliştiriciye Ulaşın",
   description:
     "Projeleriniz ve sorularınız için benimle iletişime geçin. Özel web geliştirme, sistem entegrasyonu ve dijital çözümler için birlikte çalışabiliriz.",
+  keywords: ["Göktay Gürbüzer", "iletişim", "yazılım desteği", "web geliştirme", "freelance yazılım"],
+  authors: [{ name: "Göktay Gürbüzer", url: "https://goktay.dev" }],
+  publisher: "Göktay Gürbüzer",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    locale: "tr_TR",
+    url: "https://goktay.dev/iletisim",
+    title: "Göktay Gürbüzer - İletişim",
+    description: "Göktay Gürbüzer ile yazılım projeleriniz ve web geliştirme ihtiyaçlarınız için iletişim kurun.",
+    images: [
+      {
+        url: "https://goktay.dev/72-saatte-web-sitesi-teslimati.png",
+        width: 1200,
+        height: 630,
+        alt: "Göktay Gürbüzer - İletişim",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://goktay.dev/iletisim",
+  },
 };
+
 export default function MainAboutPage1Dark() {
   return (
     <>

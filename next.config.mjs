@@ -7,6 +7,11 @@ const nextConfig = {
                 hostname: 'cdn-images-1.medium.com',
                 pathname: '/**',
             },
+            {
+                protocol: 'https',
+                hostname: 'images.unsplash.com',
+                pathname: '/**',
+            }
         ],
     },
 };
