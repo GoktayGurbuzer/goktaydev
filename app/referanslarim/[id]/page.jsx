@@ -1,4 +1,10 @@
-import Footer1 from "@/components/footers/Footer1";
+import { allPortfolios } from "@/data/portfolio";
+import AnimatedText from "@/components/common/AnimatedText";
+import {boldMultipageDark} from "@/data/menu";
+import RelatedProject10 from "@/components/portfolio/relatedProjects/RelatedProject10";
+import Footer5 from "@/components/footers/Footer5";
+import Header2 from "@/components/headers/Header2";
+import React from "react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
 import Link from "next/link";
@@ -8,14 +14,6 @@ const ParallaxContainer = dynamic(
       ssr: false, // Disable server-side rendering
     }
 );
-import { allPortfolios } from "@/data/portfolio";
-import AnimatedText from "@/components/common/AnimatedText";
-
-import {boldMultipageDark, menuItemsDark} from "@/data/menu";
-import RelatedProject10 from "@/components/portfolio/relatedProjects/RelatedProject10";
-import Footer5 from "@/components/footers/Footer5";
-import Header2 from "@/components/headers/Header2";
-import React from "react";
 
 export async function generateMetadata({ params }) {
   const project = allPortfolios.find((elm) => elm.id == params.id) || allPortfolios[0];

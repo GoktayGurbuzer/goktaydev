@@ -1,5 +1,9 @@
 import Footer5 from "@/components/footers/Footer5";
-
+import AnimatedText from "@/components/common/AnimatedText";
+import {boldMultipageDark} from "@/data/menu";
+import Portfolio from "@/components/portfolio/Portfolio2";
+import Header2 from "@/components/headers/Header2";
+import React from "react";
 import dynamic from "next/dynamic";
 
 const ParallaxContainer = dynamic(
@@ -8,12 +12,6 @@ const ParallaxContainer = dynamic(
         ssr: false, // Disable server-side rendering
     }
 );
-
-import AnimatedText from "@/components/common/AnimatedText";
-import {boldMultipageDark} from "@/data/menu";
-import Portfolio from "@/components/portfolio/Portfolio2";
-import Header2 from "@/components/headers/Header2";
-import React from "react";
 
 export const metadata = {
     title:
