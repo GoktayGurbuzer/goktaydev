@@ -74,9 +74,10 @@ export default async function Blog() {
             </p>
             <div className="local-scroll">
               <Link
-                  href={`/bold-blog`}
+                  href="https://goktaygurbuzer.medium.com/"
                   className="link-hover-anim underline align-middle"
                   data-link-animate="y"
+                  target={"_blank"}
               >
               <span className="link-strong link-strong-unhovered">
                 Tüm Haberler

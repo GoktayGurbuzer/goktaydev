@@ -14,6 +14,10 @@ const nextConfig = {
             }
         ],
     },
+    experimental: {
+        optimizeCss: true, // CSS optimizasyonunu etkinleştirir
+    },
+    compress: true,
 };
 
 export default nextConfig;

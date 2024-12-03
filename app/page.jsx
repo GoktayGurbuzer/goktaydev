@@ -4,12 +4,13 @@ import {boldMultipageDark} from "@/data/menu";
 import dynamic from "next/dynamic";
 import Footer5 from "@/components/footers/Footer5";
 import Header2 from "@/components/headers/Header2";
+import Image from 'next/image';
 import React from "react";
 
 const ParallaxContainer = dynamic(
     () => import("@/components/common/ParallaxContainer"),
     {
-      ssr: false, // Disable server-side rendering
+      ssr: false,
     }
 );
 export const metadata = {
@@ -54,16 +55,19 @@ export default function Home2MainDemoMultiPageDark() {
                   <Header2 links={boldMultipageDark} />
               </nav>
               <main id="main">
-                <ParallaxContainer
-                    className="home-section bg-dark-alpha-60 light-content parallax-5 scrollSpysection"
-                    style={{
-                      backgroundImage:
-                          "url(/assets/images/full-width-images/section-bg-13.jpg)",
-                    }}
-                    id="home"
-                >
-                  <Hero />
-                </ParallaxContainer>
+                  <ParallaxContainer
+                      className="home-section bg-dark-alpha-60 light-content parallax-5 scrollSpysection"
+                      id="home"
+                  >
+                      <Image
+                          src="/assets/images/full-width-images/section-bg-13.jpg"
+                          alt="Section background"
+                          layout="fill" // Tüm konteynırı kaplar
+                          objectFit="cover" // Görseli düzgün bir şekilde yerleştirir
+                          priority // LCP için kritik görsellerde öncelik verir
+                      />
+                      <Hero />
+                  </ParallaxContainer>
 
                 <Home2 dark />
               </main>

@@ -5,8 +5,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Portfolio({ desc }) {
-  const [currentCategory, setCurrentCategory] = useState("all");
-  const [filtered, setFiltered] = useState(portfolios2);
+    const [currentCategory, setCurrentCategory] = useState("all");
+    const [filtered, setFiltered] = useState(portfolios2);
+
+    useEffect(() => {
+        if (currentCategory === "all") {
+            setFiltered(portfolios2);
+        } else {
+            setFiltered(
+                portfolios2.filter((item) => item.categories.includes(currentCategory))
+            );
+        }
+    }, [currentCategory]);
 
   return (
     <div className="container">
@@ -44,7 +54,8 @@ export default function Portfolio({ desc }) {
                           width={1200}
                           height={819}
                           src={item.imageUrl}
-                          alt="Image Description"
+                          alt={item.description}
+                          loading="lazy"
                         />
                       </Link>
                     </div>
@@ -115,7 +126,8 @@ export default function Portfolio({ desc }) {
                           width={1200}
                           height={819}
                           src={item.imageUrl}
-                          alt="Image Description"
+                          alt={item.description}
+                          loading="lazy"
                         />
                       </Link>
                     </div>

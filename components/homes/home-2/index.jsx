@@ -1,13 +1,26 @@
+'use client'
 import React from "react";
+import { useInView } from "react-intersection-observer";
+import dynamic from "next/dynamic";
+const Faq = dynamic(() => import("./Faq"));
+const Portfolio = dynamic(() => import("./Portfolio"));
+const Blog = dynamic(() => import("./Blog"));
+const Contact = dynamic(() => import("./Contact"));
 import Experience from "./Experience";
 import Services from "./Services";
-import Portfolio from "./Portfolio";
-import Contact from "./Contact";
-import Faq from "./Faq";
-import Blog from "./Blog";
 import Link from "next/link";
 import Image from "next/image";
+
 export default function Home2({ onePage = false, dark = false }) {
+    const { ref: portfolioRef, inView: portfolioInView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
+    const { ref: blogRef, inView: blogInView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
   return (
     <>
       <section
@@ -20,13 +33,15 @@ export default function Home2({ onePage = false, dark = false }) {
           <div className="row">
             <div className="col-md-5 order-last order-md-first">
               <div className="overflow-hidden">
-                <Image
-                  width={800}
-                  height={1095}
-                  src="/assets/images/goktay-gurbuzer-kimdir.jpg"
-                  className="w-100 wow scaleOutIn"
-                  alt="Göktay Gürbüzer Full stack Web Developer"
-                />
+                  <Image
+                      width={400} // Gerçek ihtiyacınıza uygun boyut
+                      height={547} // Oran korunarak boyutlandırma
+                      src="/assets/images/goktay-gurbuzer-kimdir.jpg"
+                      alt="Göktay Gürbüzer Full stack Web Developer"
+                      quality={75} // Görüntü kalitesini azaltarak boyutu küçültür
+                      priority // İlk yüklemede kritik görsel olarak belirler
+                      className="w-100 wow scaleOutIn"
+                  />
               </div>
             </div>
             <div className="col-md-7 col-lg-6 offset-lg-1 d-flex align-items-center mb-sm-80">
@@ -111,44 +126,21 @@ export default function Home2({ onePage = false, dark = false }) {
                   Fikirlerinizi dijital dünyaya taşıyorum. Web geliştirme, SEO, Google Ads ve sistem entegrasyonlarıyla işinizi büyütmek için buradayım.
               </p>
               <div className="local-scroll">
-                {onePage ? (
-                  <>
-                    {" "}
-                    <a
-                      href="#contact"
+                  <Link
+                      href="/iletisim"
                       className="link-hover-anim underline align-middle"
                       data-link-animate="y"
-                    >
+                  >
                       <span className="link-strong link-strong-unhovered">
                         Projenize Başlayalım
                       </span>
                       <span
-                        className="link-strong link-strong-hovered"
-                        aria-hidden="true"
+                          className="link-strong link-strong-hovered"
+                          aria-hidden="true"
                       >
                         Hemen
                       </span>
-                    </a>
-                  </>
-                ) : (
-                  <>
-                    <Link
-                      href={`/bold-contact${dark ? "-dark" : ""}`}
-                      className="link-hover-anim underline align-middle"
-                      data-link-animate="y"
-                    >
-                      <span className="link-strong link-strong-unhovered">
-                        Projenize Başlayalım
-                      </span>
-                      <span
-                        className="link-strong link-strong-hovered"
-                        aria-hidden="true"
-                      >
-                        Hemen
-                      </span>
-                    </Link>
-                  </>
-                )}
+                  </Link>
               </div>
             </div>
             <div className="col-lg-7 col-xl-6 offset-xl-1">
@@ -180,8 +172,9 @@ export default function Home2({ onePage = false, dark = false }) {
           dark ? "bg-dark-1 light-content" : ""
         } `}
         id="portfolio"
+        ref={portfolioRef}
       >
-        <Portfolio />
+          {portfolioInView && <Portfolio />}
       </section>
       <hr
         className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}
