@@ -23,7 +23,16 @@ export async function generateMetadata({ params }) {
   return {
     title: `${project.title} | Göktay - Tam Yığın Web Geliştirici`,
     description: project.description,
+    keywords: ["Göktay Gürbüzer", "iletişim", "yazılım desteği", "web geliştirme", "freelance yazılım"],
+    authors: [{ name: "Göktay Gürbüzer", url: "https://goktay.dev" }],
+    publisher: "Göktay Gürbüzer",
+    robots: {
+      index: true,
+      follow: true,
+    },
     openGraph: {
+      type: "website",
+      locale: "tr_TR",
       title: `${project.title} | Göktay - Tam Yığın Web Geliştirici`,
       description: `Bu proje için ${project.client} ile çalışarak ${project.services} teknolojilerini kullanarak geliştirme yaptım. Projenin detayları: ${project.projectDescription}`,
       url: `https://goktay.dev/referanslarim/${project.id}`,
@@ -33,6 +42,9 @@ export async function generateMetadata({ params }) {
           alt: project.title,
         },
       ],
+    },
+    alternates: {
+      canonical: "https://goktay.dev/referanslarim",
     },
   };
 }

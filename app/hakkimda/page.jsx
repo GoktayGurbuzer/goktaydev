@@ -16,12 +16,39 @@ const ParallaxContainer = dynamic(
     ssr: false, // Disable server-side rendering
   }
 );
+
 export const metadata = {
   title:
-    "Hakkımda | Göktay - Tam Yığın Web Geliştirici",
+      "Hakkımda | Göktay - Tam Yığın Web Geliştirici",
   description:
-    "Ben Göktay, İstanbul’da yaşayan bir Tam Yığın Web Geliştiricisiyim. Modern teknolojilerle özelleştirilmiş web çözümleri sunuyor, projeleriniz için yaratıcı ve performans odaklı çözümler üretiyorum.",
+      "Ben Göktay, İstanbul’da yaşayan bir Tam Yığın Web Geliştiricisiyim. Modern teknolojilerle özelleştirilmiş web çözümleri sunuyor, projeleriniz için yaratıcı ve performans odaklı çözümler üretiyorum.",
+  keywords: ["Göktay Gürbüzer", "hakkımda", "yazılım kariyeri", "web geliştirme", "portföy"],
+  authors: [{ name: "Göktay Gürbüzer", url: "https://goktay.dev" }],
+  publisher: "Göktay Gürbüzer",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "profile",
+    locale: "tr_TR",
+    url: "https://goktay.dev/hakkimda",
+    title: "Göktay Gürbüzer - Hakkımda",
+    description: "Yazılım geliştirici Göktay Gürbüzer'in kariyeri, projeleri ve hedefleri hakkında bilgi alın.",
+    images: [
+      {
+        url: "https://goktay.dev/72-saatte-web-sitesi-teslimati.png",
+        width: 1200,
+        height: 630,
+        alt: "Göktay Gürbüzer Hakkında",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://goktay.dev/hakkimda",
+  },
 };
+
 const onePage = false;
 const dark = true;
 export default function BoldAboutPageDark() {
@@ -44,14 +71,15 @@ export default function BoldAboutPageDark() {
               >
                 <div className="container position-relative pt-sm-40">
                   <div className="text-center">
-                    <h1 className="hs-title-4 font-alt mb-0">
+                    <h1 className="hidden">Freelance Web Geliştirici Göktay Gürbüzer</h1>
+                    <span className="hs-title-4 font-alt mb-0">
                       <span
                           className="wow charsAnimInLong-1"
                           data-splitting="chars"
                       >
                         <AnimatedText text="Merhaba, Ben Göktay"/>
                       </span>
-                    </h1>
+                    </span>
                   </div>
                 </div>
               </ParallaxContainer>
@@ -71,12 +99,13 @@ export default function BoldAboutPageDark() {
                             src="/assets/images/google-partner-goktay-gurbuzer.jpg"
                             className="w-100 wow scaleOutIn"
                             alt="Google Partner Göktay Gürbüzer"
+                            title="Google Partner Göktay Gürbüzer"
                         />
                       </div>
                     </div>
                     <div className="col-md-7 col-lg-6 offset-lg-1 d-flex align-items-center mb-sm-80">
                       <div className="wow fadeInUp">
-                        <h2 className="section-title-medium font-alt text-outline-cont mt-20 mb-50 mb-md-30">
+                        <span className="section-title-medium font-alt text-outline-cont mt-20 mb-50 mb-md-30">
                           <span className="text-outline-2" aria-hidden="true">
                             Benim Hikayem
                           </span>
@@ -84,7 +113,7 @@ export default function BoldAboutPageDark() {
                             Benim Hikayem
                           </span>
                           <span className="text-outline">Benim Hikayem</span>
-                        </h2>
+                        </span>
                         <p className="section-text mb-60 mb-md-40 mb-sm-30">
                           2014 yılında web dünyasına adım attım. İlk olarak PHP ile başladığım bu serüvende, zamanla
                           yazılım geliştirme alanında kendimi geliştirerek daha karmaşık ve etkileyici projeler üretmeye
@@ -128,11 +157,11 @@ export default function BoldAboutPageDark() {
                 {/* Experience Section */}
                 <section className="page-section  bg-dark-1 light-content pt-0">
                   <div className="container">
-                    <h2 className="section-title-medium font-alt text-outline-cont mt-20 mb-50 mb-md-30">
+                    <span className="section-title-medium font-alt text-outline-cont mt-20 mb-50 mb-md-30">
                       <span className="text-outline-2">Teknik Becerilerim</span>
                       <span className="text-outline-1">Teknik Becerilerim</span>
                       <span className="text-outline">Teknik Becerilerim</span>
-                    </h2>
+                    </span>
                     <hr className="mt-0 mb-30"/>
                     <div className="row">
                       <div className="col-md-12 mb-sm-20">
@@ -166,22 +195,22 @@ export default function BoldAboutPageDark() {
 
                 <section className="page-section bg-dark-1 light-content pt-0 mt-0">
                   <div className="container">
-                    <h2 className="section-title-medium font-alt text-outline-cont mt-20 mb-50 mb-md-30">
+                    <span className="section-title-medium font-alt text-outline-cont mt-20 mb-50 mb-md-30">
                       <span className="text-outline-2">Deneyim</span>
                       <span className="text-outline-1">Deneyim</span>
                       <span className="text-outline">Deneyim</span>
-                    </h2>
+                    </span>
                     <hr className="mt-0 mb-40"/>
                     <div className="row">
                       <div className="col-md-3 mb-sm-20">
-                        <h3 className="section-title-inline rotate-5">
+                        <span className="section-title-inline rotate-5">
                           2019 - Devam Ediyor
-                        </h3>
+                        </span>
                       </div>
                       <div className="col-md-8 offset-md-1">
-                        <h4 className="section-title-small mb-20">
+                        <h2 className="section-title-small mb-20">
                           Kam Yazılım (Full Stack Developer)
-                        </h4>
+                        </h2>
                         <p className="mb-0">
                           Kam Yazılım’da Full Stack Developer olarak çalıştığım süre boyunca, müşterilerin talepleri
                           doğrultusunda çeşitli platformlar için uçtan uca yazılım çözümleri geliştirdim. Geliştirdiğim
@@ -218,14 +247,14 @@ export default function BoldAboutPageDark() {
 
                     <div className="row">
                       <div className="col-md-3 mb-sm-20">
-                        <h3 className="section-title-inline rotate-5">
+                        <span className="section-title-inline rotate-5">
                           2015 - 2018
-                        </h3>
+                        </span>
                       </div>
                       <div className="col-md-8 offset-md-1">
-                        <h4 className="section-title-small mb-20">
+                        <h2 className="section-title-small mb-20">
                           Renkli Sipariş (Yazılım Uzmanı)
-                        </h4>
+                        </h2>
                         <p className="mb-0">
                           Renkli Sipariş bünyesinde Yazılım Uzmanı olarak çalıştığım süre boyunca, firmanın dijital
                           dünyadaki varlığını güçlendirmek ve ihtiyaçlarına uygun çözümler geliştirmek için aktif rol
@@ -249,14 +278,14 @@ export default function BoldAboutPageDark() {
 
                     <div className="row">
                       <div className="col-md-3 mb-sm-20">
-                        <h3 className="section-title-inline rotate-5">
+                        <span className="section-title-inline rotate-5">
                           2013 - 2015
-                        </h3>
+                        </span>
                       </div>
                       <div className="col-md-8 offset-md-1">
-                        <h4 className="section-title-small mb-20">
+                        <h2 className="section-title-small mb-20">
                           Konsis Endüstriyel (Yazılım Uzmanı)
-                        </h4>
+                        </h2>
                         <p className="mb-0">
                           Konsis Endüstriyel’de Yazılım Uzmanı olarak çalıştığım süre boyunca, müşterilerin
                           ihtiyaçlarına yönelik web çözümleri geliştirdim ve yazılım altyapılarını oluşturdum. Bu
@@ -278,14 +307,14 @@ export default function BoldAboutPageDark() {
 
                     <div className="row">
                       <div className="col-md-3 mb-sm-20">
-                        <h3 className="section-title-inline rotate-5">
+                        <span className="section-title-inline rotate-5">
                           2009 - 2012
-                        </h3>
+                        </span>
                       </div>
                       <div className="col-md-8 offset-md-1">
-                        <h4 className="section-title-small mb-20">
+                        <h2 className="section-title-small mb-20">
                           Muğla Dizayn (Firma Sahibi)
-                        </h4>
+                        </h2>
                         <p className="mb-0">
                           Muğla Dizayn bünyesinde kendi işimi yürütürken, müşterilerin ihtiyaçlarına yönelik çözümler sunarak firma web sitelerinin düzenlenmesi ve yayına alınması süreçlerini yönettim. Bu süreçte gerçekleştirdiğim temel çalışmalar şunlardı:
                         </p>
@@ -303,11 +332,11 @@ export default function BoldAboutPageDark() {
                 <hr className="black mt-0 mb-0"/>
                 <section className="page-section  bg-dark-1 light-content">
                   <div className="container">
-                    <h2 className="section-title-medium font-alt text-outline-cont mt-20 mb-50 mb-md-30">
+                    <span className="section-title-medium font-alt text-outline-cont mt-20 mb-50 mb-md-30">
                       <span className="text-outline-2">Eğitim</span>
                       <span className="text-outline-1">Eğitim</span>
                       <span className="text-outline">Eğitim</span>
-                    </h2>
+                    </span>
                     {education.map((item, index) => (
                         <React.Fragment key={index}>
                           <hr
@@ -315,14 +344,14 @@ export default function BoldAboutPageDark() {
                           />
                           <div className="row">
                             <div className="col-md-3 mb-sm-20">
-                              <h3 className="section-title-inline rotate-5">
+                              <span className="section-title-inline rotate-5">
                                 {item.year}
-                              </h3>
+                              </span>
                             </div>
                             <div className="col-md-8 offset-md-1">
-                              <h4 className="section-title-small mb-0">
+                              <h3 className="section-title-small mb-0">
                                 {item.title}
-                              </h4>
+                              </h3>
                               <div className="mb-20 text-gray serif fs-5">
                               {item.institution}
                               </div>

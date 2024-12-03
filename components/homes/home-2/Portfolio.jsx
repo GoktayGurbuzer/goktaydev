@@ -44,7 +44,8 @@ export default function Portfolio({ desc }) {
                           width={1200}
                           height={819}
                           src={item.imageUrl}
-                          alt="Image Description"
+                          alt={item.description}
+                          title={item.description}
                         />
                       </Link>
                     </div>
@@ -115,7 +116,8 @@ export default function Portfolio({ desc }) {
                           width={1200}
                           height={819}
                           src={item.imageUrl}
-                          alt="Image Description"
+                          alt={item.description}
+                          title={item.description}
                         />
                       </Link>
                     </div>

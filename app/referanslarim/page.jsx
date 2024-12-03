@@ -20,7 +20,34 @@ export const metadata = {
         "Referanslarım | Göktay - Tam Yığın Web Geliştirici",
     description:
         "Tamamladığım projelere göz atın. Web sitesi geliştirme, SEO ve dijital çözümlerle iş ortaklarımın hedeflerini gerçeğe dönüştürdüğüm referanslarım burada.",
+    keywords: ["Göktay Gürbüzer", "referanslar", "projeler", "müşteri yorumları", "yazılım projeleri"],
+    authors: [{ name: "Göktay Gürbüzer", url: "https://goktay.dev" }],
+    publisher: "Göktay Gürbüzer",
+    robots: {
+        index: true,
+        follow: true,
+    },
+    openGraph: {
+        type: "website",
+        locale: "tr_TR",
+        url: "https://goktay.dev/referanslarim",
+        title: "Göktay Gürbüzer - Referanslarım",
+        description:
+            "Göktay Gürbüzer'in çalıştığı projeler ve müşteri referanslarını inceleyin. Kaliteli yazılım çözümleriyle memnun müşteriler.",
+        images: [
+            {
+                url: "https://goktay.dev/72-saatte-web-sitesi-teslimati.png",
+                width: 1200,
+                height: 630,
+                alt: "Göktay Gürbüzer - Referanslar",
+            },
+        ],
+    },
+    alternates: {
+        canonical: "https://goktay.dev/referanslarim",
+    },
 };
+
 export default function MainPortfolioPageWide2ColDark() {
     return (
         <>

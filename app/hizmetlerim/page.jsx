@@ -21,12 +21,40 @@ import {boldMultipageDark, menuItemsDark} from "@/data/menu";
 import Footer5 from "@/components/footers/Footer5";
 import React from "react";
 import Header2 from "@/components/headers/Header2";
+
 export const metadata = {
   title:
-    "Hizmetlerim | Göktay - Profesyonel Web Geliştirme ve Dijital Çözümler",
+      "Hizmetlerim | Göktay - Profesyonel Web Geliştirme ve Dijital Çözümler",
   description:
-    "Web sitesi geliştirme, sistem entegrasyonu, SEO ve Google Ads çözümleriyle işinizi dijital dünyada büyütüyorum. Profesyonel ve performans odaklı hizmetlerimle yanınızdayım.",
+      "Web sitesi geliştirme, sistem entegrasyonu, SEO ve Google Ads çözümleriyle işinizi dijital dünyada büyütüyorum. Profesyonel ve performans odaklı hizmetlerimle yanınızdayım.",
+  keywords: ["web geliştirme", "yazılım hizmetleri", "SEO optimizasyonu", "Göktay Gürbüzer", "hizmetler"],
+  authors: [{ name: "Göktay Gürbüzer", url: "https://goktay.dev" }],
+  publisher: "Göktay Gürbüzer",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    locale: "tr_TR",
+    url: "https://goktay.dev/hizmetlerim",
+    title: "Göktay Gürbüzer - Hizmetlerim",
+    description:
+        "Web geliştirme, yazılım çözümleri ve SEO optimizasyonu gibi hizmetlerle projelerinizi başarıya taşıyın.",
+    images: [
+      {
+        url: "https://goktay.dev/72-saatte-web-sitesi-teslimati.png",
+        width: 1200,
+        height: 630,
+        alt: "Göktay Gürbüzer - Hizmetler",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://goktay.dev/hizmetlerim",
+  },
 };
+
 export default function MainServicesPage2Dark() {
   return (
       <>
@@ -172,7 +200,7 @@ export default function MainServicesPage2Dark() {
                                     <path d={elm.svgPath}/>
                                   </svg>
                                 </div>
-                                <h4 className="alt-features-title">{elm.title}</h4>
+                                <h3 className="alt-features-title">{elm.title}</h3>
                                 <div className="alt-features-descr">
                                   {elm.description}
                                 </div>

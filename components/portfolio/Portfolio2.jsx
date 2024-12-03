@@ -35,12 +35,13 @@ export default function Portfolio2({ gridClass = "" }) {
                       width={650}
                       height={773}
                       src={item.imageUrl}
-                      alt={item.imageUrl}
+                      alt={item.description}
+                      title={item.description}
                       data-wow-delay={item.delay}
                   />
                 </div>
                 <div className="work-intro text-start">
-                  <h3 className="work-title">{item.title}</h3>
+                  <h2 className="work-title">{item.title}</h2>
                   <div className="work-descr">{item.description}</div>
                 </div>
               </Link>

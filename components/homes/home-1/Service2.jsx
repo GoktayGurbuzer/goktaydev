@@ -81,7 +81,7 @@ export default function Service2() {
             >
               <div className="services-text">
                 <div className="services-text-container">
-                  <h4 className="services-title">Özel Web Sitesi Geliştirme</h4>
+                  <h2 className="services-title">Özel Web Sitesi Geliştirme</h2>
                   <p className="text-gray mb-0">
                     Firmanızın veya bireysel projelerinizin ihtiyaçlarına özel, kullanıcı dostu, hızlı ve performans odaklı web siteleri tasarlayıp geliştiriyorum. Tasarım sürecinden yayınlanma aşamasına kadar tüm süreçlerde modern teknolojiler kullanarak, hedef kitlenize hitap eden profesyonel bir platform oluşturuyorum.
                   </p>
@@ -104,7 +104,7 @@ export default function Service2() {
             >
               <div className="services-text">
                 <div className="services-text-container">
-                  <h4 className="services-title">Sistem Entegrasyonu ve Otomasyon</h4>
+                  <h2 className="services-title">Sistem Entegrasyonu ve Otomasyon</h2>
                   <p className="text-gray mb-0">
                     İş süreçlerinizi dijitalleştirerek verimliliğinizi artıracak sistem entegrasyonları ve otomasyon çözümleri sunuyorum. Mevcut sistemlerinizi bir araya getirerek tüm süreçlerin uyum içinde çalışmasını sağlıyor ve teknolojiyi işinizin hizmetine sunuyorum.
                   </p>
@@ -127,7 +127,7 @@ export default function Service2() {
             >
               <div className="services-text">
                 <div className="services-text-container">
-                  <h4 className="services-title">SEO ve Dijital Pazarlama</h4>
+                  <h2 className="services-title">SEO ve Dijital Pazarlama</h2>
                   <p className="text-gray mb-0">
                     Arama motorlarında üst sıralarda yer almak ve hedef kitlenize ulaşmak için etkili SEO stratejileri oluşturuyorum. Teknik optimizasyonlardan içerik planlamasına kadar her detayı dikkate alarak web sitenizin dijital dünyada fark yaratmasını sağlıyorum.
                   </p>
@@ -150,7 +150,7 @@ export default function Service2() {
             >
               <div className="services-text">
                 <div className="services-text-container">
-                  <h4 className="services-title">Google Ürünleri Yönetimi</h4>
+                  <h2 className="services-title">Google Ürünleri Yönetimi</h2>
                   <p className="text-gray mb-0">
                     Google Ads, Analytics ve My Business gibi araçlarla işletmenizin çevrimiçi görünürlüğünü artırarak daha geniş bir kitleye ulaşmanızı sağlıyorum. Hedefli reklam kampanyaları ve analizlerle dijital pazarlama stratejilerinizi güçlendiriyorum.
                   </p>

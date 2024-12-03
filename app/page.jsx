@@ -1,4 +1,5 @@
 import Home2 from "@/components/homes/home-2";
+import Image from "next/image";
 import Hero from "@/components/homes/home-2/heros/Hero";
 import {boldMultipageDark} from "@/data/menu";
 import dynamic from "next/dynamic";
@@ -12,12 +13,39 @@ const ParallaxContainer = dynamic(
       ssr: false, // Disable server-side rendering
     }
 );
+
 export const metadata = {
-  title:
-      "Full Stack Web Developer | Göktay - Freelance Web Çözümler",
-  description:
-      "İstanbul merkezli Full Stack Web Developer Göktay. Özel web siteleri, sistem entegrasyonları, SEO ve Google Ads çözümleriyle projelerinize değer katıyorum.",
+    title:
+        "Full Stack Web Developer | Göktay - Freelance Web Çözümler",
+    description:
+        "İstanbul merkezli Full Stack Web Developer Göktay. Özel web siteleri, sistem entegrasyonları, SEO ve Google Ads çözümleriyle projelerinize değer katıyorum.",
+    keywords: ["web geliştirme", "yazılım", "Göktay Gürbüzer", "portföy"],
+    authors: [{ name: "Göktay Gürbüzer", url: "https://goktay.dev" }],
+    publisher: "Göktay Gürbüzer",
+    robots: {
+        index: true,
+        follow: true,
+    },
+    openGraph: {
+        type: "website",
+        locale: "tr_TR",
+        url: "https://goktay.dev",
+        title: "Full Stack Web Developer | Göktay - Freelance Web Çözümler",
+        description: "İstanbul merkezli Full Stack Web Developer Göktay. Özel web siteleri, sistem entegrasyonları, SEO ve Google Ads çözümleriyle projelerinize değer katıyorum.",
+        images: [
+            {
+                url: "https://goktay.dev/72-saatte-web-sitesi-teslimati.png",
+                width: 1200,
+                height: 630,
+                alt: "Göktay Gürbüzer'in Web Sitesi Görseli",
+            },
+        ],
+    },
+    alternates: {
+        canonical: "https://goktay.dev",
+    },
 };
+
 export default function Home2MainDemoMultiPageDark() {
   return (
       <>
@@ -29,16 +57,20 @@ export default function Home2MainDemoMultiPageDark() {
                   <Header2 links={boldMultipageDark} />
               </nav>
               <main id="main">
-                <ParallaxContainer
-                    className="home-section bg-dark-alpha-60 light-content parallax-5 scrollSpysection"
-                    style={{
-                      backgroundImage:
-                          "url(/assets/images/full-width-images/section-bg-13.jpg)",
-                    }}
-                    id="home"
-                >
-                  <Hero />
-                </ParallaxContainer>
+                  <ParallaxContainer
+                      className="home-section bg-dark-alpha-60 light-content parallax-5 scrollSpysection"
+                      id="home"
+                  >
+                      <Image
+                          src="/assets/images/full-width-images/section-bg-13.jpg"
+                          alt="Full stack Web Developer & Freelance Çözümler Sunuyorum."
+                          title="Full stack Web Developer & Freelance Çözümler Sunuyorum."
+                          layout="fill" // Tüm konteynırı kaplar
+                          objectFit="cover" // Görseli düzgün bir şekilde yerleştirir
+                          priority // LCP için kritik görsellerde öncelik verir
+                      />
+                      <Hero />
+                  </ParallaxContainer>
 
                 <Home2 dark />
               </main>

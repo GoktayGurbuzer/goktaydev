@@ -19,12 +19,39 @@ import Map from "@/components/common/Map";
 import {boldMultipageDark, menuItemsDark} from "@/data/menu";
 import Header2 from "@/components/headers/Header2";
 import Footer5 from "@/components/footers/Footer5";
+
 export const metadata = {
   title:
-    "İletişim | Göktay - Web Geliştiriciye Ulaşın",
+      "İletişim | Göktay - Web Geliştiriciye Ulaşın",
   description:
-    "Projeleriniz ve sorularınız için benimle iletişime geçin. Özel web geliştirme, sistem entegrasyonu ve dijital çözümler için birlikte çalışabiliriz.",
+      "Projeleriniz ve sorularınız için benimle iletişime geçin. Özel web geliştirme, sistem entegrasyonu ve dijital çözümler için birlikte çalışabiliriz.",
+  keywords: ["Göktay Gürbüzer", "iletişim", "yazılım desteği", "web geliştirme", "freelance yazılım"],
+  authors: [{ name: "Göktay Gürbüzer", url: "https://goktay.dev" }],
+  publisher: "Göktay Gürbüzer",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    locale: "tr_TR",
+    url: "https://goktay.dev/iletisim",
+    title: "Göktay Gürbüzer - İletişim",
+    description: "Göktay Gürbüzer ile yazılım projeleriniz ve web geliştirme ihtiyaçlarınız için iletişim kurun.",
+    images: [
+      {
+        url: "https://goktay.dev/72-saatte-web-sitesi-teslimati.png",
+        width: 1200,
+        height: 630,
+        alt: "Göktay Gürbüzer - İletişim",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://goktay.dev/iletisim",
+  },
 };
+
 export default function MainAboutPage1Dark() {
   return (
     <>
@@ -45,6 +72,7 @@ export default function MainAboutPage1Dark() {
                 >
                   <>
                     <>
+                      <h1 className="hidden">Göktay - Web Geliştiriciye Ulaşın</h1>
                       <div className="position-absolute top-0 bottom-0 start-0 end-0 bg-gradient-dark"></div>
                       <div className="container position-relative pt-50">
                         {/* Section Content */}
@@ -52,20 +80,14 @@ export default function MainAboutPage1Dark() {
                           <div className="row">
                             {/* Page Title */}
                             <div className="col-md-8 offset-md-2">
-                              <h2
-                                className="section-caption-border mb-30 mb-xs-20 wow fadeInUp"
-                                data-wow-duration="1.2s"
-                              >
-                                Bana Ulaşın
-                              </h2>
-                              <h1 className="hs-title-1 mb-0">
+                              <span className="hs-title-1 mb-0">
                                 <span
                                   className="wow charsAnimIn"
                                   data-splitting="chars"
                                 >
                                   Projelerinizi hayata geçirmek için ilk adımı atın! Hedeflerinizi konuşmak ve birlikte çalışmak için hemen benimle iletişime geçin.
                                 </span>
-                              </h1>
+                              </span>
                             </div>
                             {/* End Page Title */}
                           </div>
@@ -96,9 +118,9 @@ export default function MainAboutPage1Dark() {
                     {/* End Decorative Waves */}
                     <div className="row position-relative">
                       <div className="col-md-6 col-lg-5 mb-md-50 mb-sm-30">
-                        <h3 className="section-title mb-30">
+                        <span className="section-title mb-30">
                           Merak Ettikleriniz ve Daha Fazlası
-                        </h3>
+                        </span>
                         <p className="text-gray mb-0">
                           Projeleriniz ve hizmetlerimiz hakkında en sık sorulan soruları aşağıda sizin için yanıtladık. Daha fazla bilgiye ihtiyacınız olursa bizimle iletişime geçmekten çekinmeyin!
                         </p>

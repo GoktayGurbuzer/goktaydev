@@ -9,11 +9,12 @@ export default function Hero() {
         <p className="section-title-tiny font-alt mb-40 mb-sm-30 wow fadeInUp">
           Ben Göktay Gürbüzer
         </p>
-        <h1 className="hs-title-4 font-alt mb-60 mb-sm-40">
+        <h1 className="hidden">Full stack Web Developer</h1>
+        <span className="hs-title-4 font-alt mb-60 mb-sm-40">
           <AnimatedText text="Full stack Web Developer" />
           <br />
           <AnimatedText text="& Freelance Çözümler Sunuyorum." />
-        </h1>
+        </span>
         <div
           className="local-scroll wow fadeInUp"
           data-wow-delay="0.6s"
@@ -21,6 +22,7 @@ export default function Hero() {
         >
           <a
             href="#portfolio"
+            title="Full stack Web Developer Portfolio"
             className="btn btn-mod btn-circle btn-white btn-ellipse"
             data-btn-animate="ellipse"
           >
@@ -40,7 +42,7 @@ export default function Hero() {
         data-wow-offset={0}
       >
         <div className="full-wrapper text-end">
-          <a href="#about" className="scroll-down-4">
+          <a href="#about" title="Full stack Web Developer Hakkımda" className="scroll-down-4">
             <i className="icon-arrow-down1 size-22" />
           </a>
         </div>

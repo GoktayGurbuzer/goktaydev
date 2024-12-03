@@ -67,7 +67,7 @@ export default function Contact() {
                     <div className="ci-icon">
                       <i className={item.iconClass} />
                     </div>
-                    <h4 className="ci-title">{item.title}</h4>
+                    <span className="ci-title">{item.title}</span>
                     <div className="ci-text large">{item.text}</div>
                     <div className="ci-link">
                       <a

@@ -23,6 +23,7 @@ export default function Header2({ links }) {
           <Image
             src="/assets/images/logo-dark.svg"
             alt="Göktay Gürbüzer Full-stack Developer"
+            title="Göktay Gürbüzer Full-stack Developer"
             width={105}
             height={34}
             className="light-mode-logo"
@@ -30,6 +31,7 @@ export default function Header2({ links }) {
           <Image
             src="/assets/images/logo-white.svg"
             alt="Göktay Gürbüzer Full-stack Developer"
+            title="Göktay Gürbüzer Full-stack Developer"
             width={105}
             height={34}
             className="dark-mode-logo"

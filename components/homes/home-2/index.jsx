@@ -26,6 +26,7 @@ export default function Home2({ onePage = false, dark = false }) {
                   src="/assets/images/goktay-gurbuzer-kimdir.jpg"
                   className="w-100 wow scaleOutIn"
                   alt="Göktay Gürbüzer Full stack Web Developer"
+                  title="Göktay Gürbüzer Full stack Web Developer"
                 />
               </div>
             </div>
@@ -133,7 +134,7 @@ export default function Home2({ onePage = false, dark = false }) {
                 ) : (
                   <>
                     <Link
-                      href={`/bold-contact${dark ? "-dark" : ""}`}
+                      href="/iletisim"
                       className="link-hover-anim underline align-middle"
                       data-link-animate="y"
                     >

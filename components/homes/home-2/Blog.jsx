@@ -74,7 +74,8 @@ export default async function Blog() {
             </p>
             <div className="local-scroll">
               <Link
-                  href={`/bold-blog`}
+                  href="https://goktaygurbuzer.medium.com/"
+                  target="_blank"
                   className="link-hover-anim underline align-middle"
                   data-link-animate="y"
               >
@@ -108,6 +109,7 @@ export default async function Blog() {
                         height={479}
                         src={blog.image || "/default-image.jpg"} // Varsayılan görsel
                         alt={blog.title || "Blog image"}
+                        title={blog.title || "Blog image"}
                     />
                   </Link>
                 </div>
