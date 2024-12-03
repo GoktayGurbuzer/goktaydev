@@ -3,12 +3,31 @@ import React from "react";
 import Header2 from "@/components/headers/Header2";
 import {boldMultipageDark} from "@/data/menu";
 import Footer5 from "@/components/footers/Footer5";
+
 export const metadata = {
-  title:
-    "Page Not Found || Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+  title: "Sayfa Bulunamadı | Göktay",
   description:
-    "Resonance &mdash; One & Multi Page React Nextjs Creative Template",
+      "Aradığınız sayfa bulunamadı. Ancak, freelance web çözümleri, sistem entegrasyonları ve SEO hizmetleri için Göktay.dev'i ziyaret edebilirsiniz.",
+  keywords: ["sayfa bulunamadı", "404", "hata", "web geliştirici", "Göktay Gürbüzer"],
+  authors: [{ name: "Göktay Gürbüzer", url: "https://goktay.dev" }],
+  publisher: "Göktay Gürbüzer",
+  robots: {
+    index: false, // 404 sayfalarının arama motorlarında dizine eklenmemesi gerekir.
+    follow: true, // Sayfada bulunan bağlantıları takip edilebilir yapın.
+  },
+  openGraph: {
+    type: "website",
+    locale: "tr_TR",
+    url: "https://goktay.dev/404",
+    title: "Sayfa Bulunamadı | Göktay",
+    description: "Aradığınız sayfa bulunamadı. Ancak, freelance web çözümleri, sistem entegrasyonları ve SEO hizmetleri için Göktay.dev'i ziyaret edebilirsiniz.",
+  },
+  alternates: {
+    canonical: "https://goktay.dev/404", // 404 sayfasının kendine özgü bir canonical etiketi olmalı.
+  },
 };
+
+
 export default function MainAboutPage1() {
   return (
     <>

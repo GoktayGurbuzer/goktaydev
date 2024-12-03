@@ -3,7 +3,6 @@ import Header2 from "@/components/headers/Header2";
 import Experience from "@/components/homes/home-2/Experience";
 import { education } from "@/data/education";
 import { numberData } from "@/data/facts";
-import { Metadata } from "next";
 import { boldMultipageDark } from "@/data/menu";
 import dynamic from "next/dynamic";
 import Image from "next/image";
