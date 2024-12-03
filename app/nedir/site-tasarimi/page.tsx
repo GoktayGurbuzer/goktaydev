@@ -36,7 +36,7 @@ export const metadata = {
     openGraph: {
         type: "article",
         locale: "tr_TR",
-        url: "https://goktay.dev/site-tasarimi",
+        url: "https://goktay.dev/nedir/site-tasarimi",
         title: "Site Tasarımı Nedir? 2025 Güncel Rehberi",
         description:
             "Site tasarımı, bir web sitesinin görsel ve kullanıcı deneyimini geliştiren bir süreçtir. 2025 site tasarımı trendlerini ve fiyatlarını öğrenmek için rehberimizi okuyun.",
@@ -50,7 +50,7 @@ export const metadata = {
         ],
     },
     alternates: {
-        canonical: "https://goktay.dev/site-tasarimi",
+        canonical: "https://goktay.dev/nedir/site-tasarimi",
     },
     twitter: {
         card: "summary_large_image",

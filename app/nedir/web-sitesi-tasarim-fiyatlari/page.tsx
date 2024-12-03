@@ -38,7 +38,7 @@ export const metadata = {
     openGraph: {
         type: "article",
         locale: "tr_TR",
-        url: "https://goktay.dev/web-tasarim",
+        url: "https://goktay.dev/nedir/web-tasarim",
         title: "Web Tasarım Nedir? 2025 Güncel Rehberi",
         description:
             "Web tasarım, işletmelerin ve bireylerin dijital dünyada öne çıkmasını sağlayan bir süreçtir. Web tasarım hakkında bilgi sahibi olmak ve 2024 trendlerini öğrenmek için rehberimizi okuyun.",
@@ -52,7 +52,7 @@ export const metadata = {
         ],
     },
     alternates: {
-        canonical: "https://goktay.dev/web-tasarim",
+        canonical: "https://goktay.dev/nedir/web-tasarim",
     },
     twitter: {
         card: "summary_large_image",
