@@ -24,7 +24,7 @@ export default function Header1({ links }) {
             src="/assets/images/logo-white.svg"
             alt="Your Company Logo"
             width={105}
-            height={34}
+            height={0}
             className="dark-mode-logo"
           />
         </Link>

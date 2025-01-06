@@ -27,6 +27,7 @@ export default function Home2({ onePage = false, dark = false }) {
                   className="w-100 wow scaleOutIn"
                   alt="Göktay Gürbüzer Full stack Web Developer"
                   title="Göktay Gürbüzer Full stack Web Developer"
+                  priority
                 />
               </div>
             </div>

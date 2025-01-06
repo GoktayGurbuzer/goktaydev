@@ -5,6 +5,7 @@ import React from "react";
 import Footer5 from "@/components/footers/Footer5";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import Contact from "@/components/homes/home-5/Contact";
 
 const ParallaxContainer = dynamic(
     () => import("@/components/common/ParallaxContainer"),
@@ -90,7 +91,7 @@ export default function MainBlogSinglePageFullWidthDark({ params }) {
                                                             className="wow charsAnimIn"
                                                             data-splitting="chars"
                                                         >
-                                                            <AnimatedText text={title} />
+                                                            <AnimatedText text={title}/>
                                                         </span>
                                                     </h1>
                                                 </div>
@@ -124,10 +125,17 @@ export default function MainBlogSinglePageFullWidthDark({ params }) {
                                                         avantajlar şunlardır:
                                                     </p>
                                                     <ul>
-                                                        <li>**Özelleştirilmiş Çözümler:** İhtiyaçlarınıza özel yazılım çözümleri.</li>
-                                                        <li>**Maliyet Verimliliği:** Proje bazlı çalışmayla bütçe tasarrufu.</li>
-                                                        <li>**Hızlı Teslim:** Deneyimli bir profesyonelden zamanında teslimat.</li>
-                                                        <li>**Esneklik:** İhtiyacınıza uygun ölçeklenebilir yazılım.</li>
+                                                        <li>Özelleştirilmiş Çözümler: İhtiyaçlarınıza özel yazılım
+                                                            çözümleri.
+                                                        </li>
+                                                        <li>Maliyet Verimliliği: Proje bazlı çalışmayla bütçe
+                                                            tasarrufu.
+                                                        </li>
+                                                        <li>Hızlı Teslim: Deneyimli bir profesyonelden zamanında
+                                                            teslimat.
+                                                        </li>
+                                                        <li>Esneklik: İhtiyacınıza uygun ölçeklenebilir yazılım.
+                                                        </li>
                                                     </ul>
                                                     <h2>Uzman Freelance Kodlama Süreçleri</h2>
                                                     <h3>1. İhtiyaç Analizi</h3>
@@ -158,11 +166,11 @@ export default function MainBlogSinglePageFullWidthDark({ params }) {
                                                     <h2>Hizmetlerim</h2>
                                                     <p>
                                                         - Web ve mobil uygulama geliştirme
-                                                        <br />
+                                                        <br/>
                                                         - API entegrasyonu
-                                                        <br />
+                                                        <br/>
                                                         - Veritabanı yönetimi
-                                                        <br />
+                                                        <br/>
                                                         - Performans optimizasyonu
                                                     </p>
                                                     <p>
@@ -175,10 +183,16 @@ export default function MainBlogSinglePageFullWidthDark({ params }) {
                                     </div>
                                 </div>
                             </section>
-                            <hr className="mt-0 mb-0 white" />
+                            <section
+                                className="page-section bg-dark-1 light-content pt-0"
+                                id="contact"
+                            >
+                                <Contact/>
+                            </section>
+                            <hr className="mt-0 mb-0 white"/>
                         </main>
                         <footer className="footer-1 bg-dark-2 light-content">
-                            <Footer5 />
+                            <Footer5/>
                         </footer>
                     </div>
                 </div>

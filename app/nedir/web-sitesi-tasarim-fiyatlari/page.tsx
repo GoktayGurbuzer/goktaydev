@@ -5,6 +5,7 @@ import React from "react";
 import Footer5 from "@/components/footers/Footer5";
 import dynamic from "next/dynamic";
 import Image from 'next/image'
+import Contact from "@/components/homes/home-5/Contact";
 
 const ParallaxContainer = dynamic(
     () => import("@/components/common/ParallaxContainer"),
@@ -243,7 +244,12 @@ export default function MainBlogSinglePageFullWidthDark({ params }){
                                 {/* Divider */}
                                 <hr className="mt-0 mb-0 white"/>
                                 {/* End Divider */}
-
+                                <section
+                                    className="page-section bg-dark-1 light-content pt-0"
+                                    id="contact"
+                                >
+                                    <Contact/>
+                                </section>
                             </>
                         </main>
                         <footer className="footer-1 bg-dark-2 light-content">

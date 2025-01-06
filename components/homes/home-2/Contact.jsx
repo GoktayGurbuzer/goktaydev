@@ -151,7 +151,6 @@ export default function Contact({ heading }) {
                   className="input-sm form-control underline"
                   style={{height: 120}}
                   placeholder="Projeniz hakkında kısa bir bilgi verebilir misiniz?"
-                  defaultValue={""}
               />
             </div>
             <div>

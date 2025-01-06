@@ -5,6 +5,7 @@ import React from "react";
 import Footer5 from "@/components/footers/Footer5";
 import dynamic from "next/dynamic";
 import Image from 'next/image'
+import Contact from "@/components/homes/home-5/Contact";
 
 const ParallaxContainer = dynamic(
     () => import("@/components/common/ParallaxContainer"),
@@ -120,7 +121,9 @@ export default function MainBlogSinglePageFullWidthDark({ params }){
                                                 <div className="blog-item mb-80 mb-xs-40">
                                                     <div className="blog-item-body">
                                                         <p className="lead">
-                                                            <a href="https://goktay.dev" title="Full Stack Developer Göktay">Full Stack Developer</a>,
+                                                            <a href="https://goktay.dev"
+                                                               title="Full Stack Developer Göktay">Full Stack
+                                                                Developer</a>,
                                                             yazılım geliştirme dünyasında hem ön
                                                             yüz (frontend) hem de arka yüz (backend) geliştirme
                                                             süreçlerine hakim olan ve bu iki alanı birleştirerek çalışan
@@ -164,7 +167,9 @@ export default function MainBlogSinglePageFullWidthDark({ params }){
                                                         <h4>Full Stack Developer:</h4>
                                                         <p>Hem frontend hem de backend alanlarında bilgi sahibi olan ve
                                                             bir projeyi baştan sona tek başına geliştirebilecek
-                                                            yeterlilikteki kişidir. Bir <a href="https://goktay.dev" title="Full Stack Developer uzmanlığı ile modern çözümler">full stack developer</a>,
+                                                            yeterlilikteki kişidir. Bir <a href="https://goktay.dev"
+                                                                                           title="Full Stack Developer uzmanlığı ile modern çözümler">full
+                                                                stack developer</a>,
                                                             hem
                                                             kullanıcı arayüzünü hem de sunucu tarafındaki işlemleri
                                                             geliştirebilir.</p>
@@ -179,7 +184,9 @@ export default function MainBlogSinglePageFullWidthDark({ params }){
 
                                                         <h2>Full Stack Developer Olmak için Neleri Bilmek
                                                             Gerekiyor?</h2>
-                                                        <p><a href="https://goktay.dev" title="Full Stack Developer olarak profesyonel web geliştirme hizmetleri">Full stack developer</a> olmak,
+                                                        <p><a href="https://goktay.dev"
+                                                              title="Full Stack Developer olarak profesyonel web geliştirme hizmetleri">Full
+                                                            stack developer</a> olmak,
                                                             yazılım dünyasında oldukça geniş
                                                             bir bilgi yelpazesine hakim olmayı gerektirir. Ancak bu göz
                                                             korkutmasın; doğru bir plan ve azimle bu bilgiye
@@ -239,7 +246,9 @@ export default function MainBlogSinglePageFullWidthDark({ params }){
                                                             </li>
                                                         </ul>
                                                         <h3>Ne Kadar Süre Gerekir?</h3>
-                                                        <p><a href="https://goktay.dev" title="Projeniz için deneyimli bir Full Stack Developer ile çalışın">Full stack developer</a> olmak,
+                                                        <p><a href="https://goktay.dev"
+                                                              title="Projeniz için deneyimli bir Full Stack Developer ile çalışın">Full
+                                                            stack developer</a> olmak,
                                                             bu alanlarda bilgilenmek için
                                                             ortalama 1-2 yıl düzenli çalışmayı gerektirir. Eğer temel
                                                             bir yazılım bilginiz yoksa, başlangıçta biraz daha fazla
@@ -255,35 +264,49 @@ export default function MainBlogSinglePageFullWidthDark({ params }){
                                                         />
 
                                                         <h2>Nasıl Full Stack Developer Olunur?</h2>
-                                                        <p><a href="https://goktay.dev" title="Full Stack Developer becerilerimle süreçlerinizi optimize ediyorum">Full stack developer</a> olmak
+                                                        <p><a href="https://goktay.dev"
+                                                              title="Full Stack Developer becerilerimle süreçlerinizi optimize ediyorum">Full
+                                                            stack developer</a> olmak
                                                             için belirli bir öğrenim yolunu
                                                             takip etmeniz gerekir. İşte temel adımlar:</p>
 
                                                         <h3>1. Temel Bilgileri Öğrenin</h3>
                                                         <p>Öncelikle HTML, CSS ve JavaScript ile başlayarak web
                                                             geliştirme dünyasının temellerini öğrenin. Bu teknolojiler,
-                                                            her <a href="https://goktay.dev" title="İstanbul merkezli Full Stack Developer Göktay">full stack developer</a>'ın
+                                                            her <a href="https://goktay.dev"
+                                                                   title="İstanbul merkezli Full Stack Developer Göktay">full
+                                                                stack developer</a>'ın
                                                             bilmesi gereken temel
                                                             taşlardır.</p>
 
                                                         <h3>2. Frontend ve Backend’e Ayrı Odaklanın</h3>
                                                         <ul>
-                                                            <li><strong>Frontend için:</strong> React.js veya Vue.js gibi bir framework öğrenerek kullanıcı arayüzü geliştirme becerilerinizi artırabilirsiniz.
+                                                            <li><strong>Frontend için:</strong> React.js veya Vue.js
+                                                                gibi bir framework öğrenerek kullanıcı arayüzü
+                                                                geliştirme becerilerinizi artırabilirsiniz.
                                                             </li>
-                                                            <li><strong>Backend için:</strong> Node.js veya Python ile sunucu tarafını anlamaya başlayabilirsiniz.
+                                                            <li><strong>Backend için:</strong> Node.js veya Python ile
+                                                                sunucu tarafını anlamaya başlayabilirsiniz.
                                                             </li>
                                                         </ul>
 
                                                         <h3>3. Küçük Projelerle Pratik Yapın</h3>
-                                                        <p>Teori önemlidir, ancak uygulama yapmadan öğrenim eksik kalır. Basit bir blog sitesi, yapılacaklar listesi veya kişisel portföy sitesi yaparak pratik kazanın.</p>
+                                                        <p>Teori önemlidir, ancak uygulama yapmadan öğrenim eksik kalır.
+                                                            Basit bir blog sitesi, yapılacaklar listesi veya kişisel
+                                                            portföy sitesi yaparak pratik kazanın.</p>
 
                                                         <h3>4. Tam Yığın Projeler Yapın</h3>
-                                                        <p>Bir <a href="https://goktay.dev" title="Kapsamlı projeleriniz için bir Full Stack Developer">full stack developer</a>,
+                                                        <p>Bir <a href="https://goktay.dev"
+                                                                  title="Kapsamlı projeleriniz için bir Full Stack Developer">full
+                                                            stack developer</a>,
                                                             frontend ve backend’i birleştirebilmelidir. Örneğin, bir
-                                                            kullanıcı girişi sistemi veya e-ticaret uygulaması yaparak hem frontend hem de backend becerilerinizi geliştirebilirsiniz.</p>
+                                                            kullanıcı girişi sistemi veya e-ticaret uygulaması yaparak
+                                                            hem frontend hem de backend becerilerinizi
+                                                            geliştirebilirsiniz.</p>
 
                                                         <h3>5. Sürekli Öğrenin ve Güncel Kalın</h3>
-                                                        <p>Teknoloji dünyası sürekli değişiyor. Yeni frameworkler, kütüphaneler ve araçlar öğrenmeye açık olun.</p>
+                                                        <p>Teknoloji dünyası sürekli değişiyor. Yeni frameworkler,
+                                                            kütüphaneler ve araçlar öğrenmeye açık olun.</p>
 
                                                         <Image
                                                             src="https://images.unsplash.com/photo-1570215171655-49dc3fa810b2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -295,30 +318,51 @@ export default function MainBlogSinglePageFullWidthDark({ params }){
 
                                                         <h2>Neden Full Stack Developer Olmalısınız?</h2>
                                                         <h3>Geniş İş İmkanları:</h3>
-                                                        <p><a href="https://goktay.dev" title="Freelance Full Stack Developer ile dijital projelerinize değer katın">Full stack developer</a>'lar,
+                                                        <p><a href="https://goktay.dev"
+                                                              title="Freelance Full Stack Developer ile dijital projelerinize değer katın">Full
+                                                            stack developer</a>'lar,
                                                             birçok yetkinliğe sahip oldukları için hem frontend hem de
                                                             backend projelerinde iş bulabilirler.</p>
 
                                                         <h3>Problem Çözme Yeteneği:</h3>
-                                                        <p>Bu meslek, teknik problemlere bütünsel bir bakış açısıyla yaklaşmanızı sağlar.</p>
+                                                        <p>Bu meslek, teknik problemlere bütünsel bir bakış açısıyla
+                                                            yaklaşmanızı sağlar.</p>
 
                                                         <h3>Yaratıcılık ve Kontrol:</h3>
-                                                        <p>Bir projeyi baştan sona kendi başınıza geliştirebilmek, yaratıcı özgürlük sunar.</p>
+                                                        <p>Bir projeyi baştan sona kendi başınıza geliştirebilmek,
+                                                            yaratıcı özgürlük sunar.</p>
 
                                                         <h3>Yüksek Maaş:</h3>
-                                                        <p><a href="https://goktay.dev" title="Full Stack Developer olarak güçlü ve performanslı web uygulamaları geliştiriyorum">Full stack developer</a>'lar,
+                                                        <p><a href="https://goktay.dev"
+                                                              title="Full Stack Developer olarak güçlü ve performanslı web uygulamaları geliştiriyorum">Full
+                                                            stack developer</a>'lar,
                                                             geniş bilgi birikimleri nedeniyle genelde daha yüksek maaş
                                                             alırlar.</p>
 
                                                         <h2>Full Stack Developer Olduktan Sonra Ne Olacak?</h2>
-                                                        <p><a href="https://goktay.dev" title="Tam yığın teknolojilere hakim bir Full Stack Developer arıyorsanız">Full stack developer</a> olduktan
+                                                        <p><a href="https://goktay.dev"
+                                                              title="Tam yığın teknolojilere hakim bir Full Stack Developer arıyorsanız">Full
+                                                            stack developer</a> olduktan
                                                             sonra birçok kapı önünüzde açılır. İşte bu meslekte elde
                                                             edeceğiniz kazanımlar:</p>
                                                         <ul>
-                                                            <li><strong>Çok Yönlü Çalışma</strong> Frontend ve backend süreçlerini birleştirerek projelerde daha geniş bir rol üstlenebilirsiniz.</li>
-                                                            <li><strong>Daha Yüksek Kariyer Hedefleri</strong> Senior Developer, Yazılım Mimarisi veya Teknik Liderlik gibi üst düzey pozisyonlara geçiş yapabilirsiniz.</li>
-                                                            <li><strong>Freelancer Olarak Çalışma İmkanı</strong> Kendi müşterilerinizi bulabilir, projeler üzerinde freelance olarak çalışabilirsiniz.</li>
-                                                            <li><strong>Ekip Çalışmasında Liderlik</strong> Full stack becerilerinizle ekipteki diğer geliştiricilere rehberlik edebilir ve projelerde daha etkin bir rol oynayabilirsiniz.</li>
+                                                            <li><strong>Çok Yönlü Çalışma</strong> Frontend ve backend
+                                                                süreçlerini birleştirerek projelerde daha geniş bir rol
+                                                                üstlenebilirsiniz.
+                                                            </li>
+                                                            <li><strong>Daha Yüksek Kariyer Hedefleri</strong> Senior
+                                                                Developer, Yazılım Mimarisi veya Teknik Liderlik gibi
+                                                                üst düzey pozisyonlara geçiş yapabilirsiniz.
+                                                            </li>
+                                                            <li><strong>Freelancer Olarak Çalışma İmkanı</strong> Kendi
+                                                                müşterilerinizi bulabilir, projeler üzerinde freelance
+                                                                olarak çalışabilirsiniz.
+                                                            </li>
+                                                            <li><strong>Ekip Çalışmasında Liderlik</strong> Full stack
+                                                                becerilerinizle ekipteki diğer geliştiricilere rehberlik
+                                                                edebilir ve projelerde daha etkin bir rol
+                                                                oynayabilirsiniz.
+                                                            </li>
                                                         </ul>
 
                                                         <Image
@@ -330,11 +374,19 @@ export default function MainBlogSinglePageFullWidthDark({ params }){
                                                         />
 
                                                         <h3>Sonuç</h3>
-                                                        <p><a href="https://goktay.dev" title="Full Stack Developer Göktay ile projelerinizi bir sonraki seviyeye taşıyın">Full stack developer</a> olmak,
+                                                        <p><a href="https://goktay.dev"
+                                                              title="Full Stack Developer Göktay ile projelerinizi bir sonraki seviyeye taşıyın">Full
+                                                            stack developer</a> olmak,
                                                             yazılım dünyasına hakim olmak isteyen herkes için harika bir
                                                             hedeftir. Hem frontend hem de backend geliştirme bilgisi
-                                                            sayesinde projelere bütünsel bir bakış açısıyla yaklaşabilirsiniz. Bu yolculuk boyunca öğrenmeyi sürdürmek, pratik yapmak ve disiplinli olmak başarıya ulaşmanız için en önemli adımlardır.</p>
-                                                        <p>Eğer yazılım dünyasına adım atmayı düşünüyorsanız, full stack developer olmak size birçok kapı açacaktır. Unutmayın, önemli olan başlamak ve her gün bir adım ileri gitmektir! 🚀</p>
+                                                            sayesinde projelere bütünsel bir bakış açısıyla
+                                                            yaklaşabilirsiniz. Bu yolculuk boyunca öğrenmeyi sürdürmek,
+                                                            pratik yapmak ve disiplinli olmak başarıya ulaşmanız için en
+                                                            önemli adımlardır.</p>
+                                                        <p>Eğer yazılım dünyasına adım atmayı düşünüyorsanız, full stack
+                                                            developer olmak size birçok kapı açacaktır. Unutmayın,
+                                                            önemli olan başlamak ve her gün bir adım ileri gitmektir!
+                                                            🚀</p>
                                                     </div>
                                                 </div>
                                                 {/* End Post */}
@@ -347,14 +399,18 @@ export default function MainBlogSinglePageFullWidthDark({ params }){
                                 {/* Divider */}
                                 <hr className="mt-0 mb-0 white"/>
                                 {/* End Divider */}
-
+                                <section
+                                    className="page-section bg-dark-1 light-content pt-0"
+                                    id="contact"
+                                >
+                                    <Contact/>
+                                </section>
                             </>
                         </main>
                         <footer className="footer-1 bg-dark-2 light-content">
                             <Footer5/>
                         </footer>
                     </div>
-                    {" "}
                 </div>
             </div>
         </>

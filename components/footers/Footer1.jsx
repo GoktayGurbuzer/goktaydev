@@ -35,7 +35,7 @@ export default function Footer1({ dark = false }) {
               <Image
                 src="/assets/images/logo-white.svg"
                 width={105}
-                height={34}
+                height={0}
                 className="dark-mode-logo"
                 alt="Your Company Logo"
               />

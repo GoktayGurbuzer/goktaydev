@@ -15,15 +15,15 @@ const ParallaxContainer = dynamic(
 );
 
 export const metadata = {
-    title: "Freelance Yazılımcı: Profesyonel Çözümlerle Dijital Başarı",
+    title: "Web Tasarım Ofisi: Profesyonel ve Modern Çözümler",
     description:
-        "Freelance yazılımcı olarak, ajanslar ve işletmeler için özel yazılım çözümleri sunuyorum. Hızlı, maliyet etkin ve profesyonel çözümler için rehberimizi okuyun.",
+        "Web tasarım ofisi olarak işletmelere özel, mobil uyumlu ve SEO odaklı web tasarım hizmetleri sunuyorum. Dijital dünyada fark yaratmak için rehberimizi inceleyin.",
     keywords: [
-        "freelance yazılımcı",
-        "freelance yazılım",
-        "freelance yazılım çözümleri",
-        "freelance web geliştirici",
-        "freelance yazılım geliştirme",
+        "web tasarım ofisi",
+        "web tasarım hizmetleri",
+        "profesyonel web tasarım",
+        "mobil uyumlu web tasarım",
+        "SEO odaklı web tasarım",
     ],
     authors: [{ name: "Göktay Gürbüzer", url: "https://goktay.dev" }],
     publisher: "Göktay Gürbüzer",
@@ -34,36 +34,36 @@ export const metadata = {
     openGraph: {
         type: "article",
         locale: "tr_TR",
-        url: "https://goktay.dev/nedir/freelance-yazilimci",
-        title: "Freelance Yazılımcı: Profesyonel Çözümlerle Dijital Başarı",
+        url: "https://goktay.dev/nedir/web-tasarim-ofisi",
+        title: "Web Tasarım Ofisi: Profesyonel ve Modern Çözümler",
         description:
-            "Freelance yazılımcı olarak, ajanslar ve işletmeler için özel yazılım çözümleri sunuyorum. Hızlı, maliyet etkin ve profesyonel çözümler için rehberimizi okuyun.",
+            "Web tasarım ofisi olarak işletmelere özel, mobil uyumlu ve SEO odaklı web tasarım hizmetleri sunuyorum. Dijital dünyada fark yaratmak için rehberimizi inceleyin.",
         images: [
             {
-                url: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1636&auto=format&fit=crop&ixlib=rb-4.0.3",
+                url: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=80&w=1636&auto=format&fit=crop&ixlib=rb-4.0.3",
                 width: 1200,
                 height: 630,
-                alt: "Freelance Yazılımcı",
+                alt: "Web Tasarım Ofisi",
             },
         ],
     },
     alternates: {
-        canonical: "https://goktay.dev/nedir/freelance-yazilimci",
+        canonical: "https://goktay.dev/nedir/web-tasarim-ofisi",
     },
     twitter: {
         card: "summary_large_image",
-        title: "Freelance Yazılımcı: Profesyonel Çözümlerle Dijital Başarı",
+        title: "Web Tasarım Ofisi: Profesyonel ve Modern Çözümler",
         description:
-            "Freelance yazılımcı olarak, ajanslar ve işletmeler için özel yazılım çözümleri sunuyorum. Hızlı, maliyet etkin ve profesyonel çözümler için rehberimizi okuyun.",
+            "Web tasarım ofisi olarak işletmelere özel, mobil uyumlu ve SEO odaklı web tasarım hizmetleri sunuyorum. Dijital dünyada fark yaratmak için rehberimizi inceleyin.",
         images: [
-            "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1636&auto=format&fit=crop&ixlib=rb-4.0.3",
+            "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=80&w=1636&auto=format&fit=crop&ixlib=rb-4.0.3",
         ],
         site: "@GoktayGurbuzer",
     },
 };
 
 export default function MainBlogSinglePageFullWidthDark() {
-    const title = "Freelance Yazılımcı: Profesyonel Çözümlerle Dijital Başarı";
+    const title = "Web Tasarım Ofisi: Profesyonel ve Modern Çözümler";
 
     return (
         <>
@@ -106,46 +106,49 @@ export default function MainBlogSinglePageFullWidthDark() {
                                         <div className="col-lg-8 offset-lg-2">
                                             <div className="blog-item mb-80 mb-xs-40">
                                                 <div className="blog-item-body">
-                                                    <h2>Freelance Yazılımcı Nedir?</h2>
+                                                    <h2>Web Tasarım Ofisi Nedir?</h2>
                                                     <p>
-                                                        Freelance yazılımcılar, projelere bağımsız olarak dahil olan,
-                                                        belirli bir işverenin kadrosunda olmayan ancak proje bazlı
-                                                        çalışan profesyonellerdir. Bu çalışma modeli, özellikle
-                                                        ajanslar ve işletmeler için birçok avantaj sunar.
+                                                        Web tasarım ofisi, işletmelerin dijital dünyada güçlü bir varlık
+                                                        göstermesi için profesyonel web tasarım hizmetleri sunar.
+                                                        Kullanıcı dostu, mobil uyumlu ve görsel olarak etkileyici web
+                                                        siteleri oluşturur.
                                                     </p>
-                                                    <h2>Neden Freelance Yazılımcı ile Çalışmalısınız?</h2>
+                                                    <h2>Web Tasarım Ofisi ile Çalışmanın Avantajları</h2>
                                                     <p>
-                                                        Freelance yazılımcı olarak, projelerinize özel çözümler sunuyor,
-                                                        hızlı ve etkili sonuçlar elde etmenizi sağlıyorum.
+                                                        Web tasarım ofisi, işletmenize özel çözümler üreterek dijital
+                                                        kimliğinizi güçlendirebilir. SEO odaklı ve performans
+                                                        optimizasyonu yapılmış web siteleriyle müşteri deneyimini
+                                                        artırabilirsiniz.
                                                     </p>
                                                     <Image
-                                                        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1636&auto=format&fit=crop&ixlib=rb-4.0.3"
-                                                        alt="Freelance Yazılımcı"
+                                                        src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=80&w=1636&auto=format&fit=crop&ixlib=rb-4.0.3"
+                                                        alt="Web Tasarım Ofisi"
                                                         width={850}
                                                         height={480}
-                                                        title="Freelance Yazılımcı"
+                                                        title="Web Tasarım Ofisi"
                                                     />
                                                     <h2>Hizmetlerim</h2>
-                                                    <h3>1. Web Sitesi Tasarımı ve Geliştirme</h3>
+                                                    <h3>1. Profesyonel Web Tasarım</h3>
                                                     <p>
-                                                        Modern, mobil uyumlu ve kullanıcı dostu web siteleri
-                                                        tasarlıyorum.
+                                                        İşletmenizin ihtiyaçlarına uygun, modern ve kullanıcı dostu
+                                                        web tasarımları sunuyorum.
                                                     </p>
-                                                    <h3>2. E-Ticaret Çözümleri</h3>
+                                                    <h3>2. SEO ve Performans Optimizasyonu</h3>
                                                     <p>
-                                                        Ürünlerinizi online ortamda hızlıca satışa sunabileceğiniz
-                                                        e-ticaret platformları geliştiriyorum.
+                                                        Web sitenizin Google sıralamasını yükseltmek ve daha hızlı
+                                                        çalışmasını sağlamak için çözümler üretiyorum.
                                                     </p>
-                                                    <h3>3. SEO ve Performans Odaklı Geliştirme</h3>
+                                                    <h3>3. Mobil Uyumlu Web Siteleri</h3>
                                                     <p>
-                                                        Google sıralamalarında daha üstte yer almanızı sağlayacak teknik
-                                                        çözümler sunuyorum.
+                                                        Mobil cihazlarda kusursuz çalışan, responsive tasarımlar
+                                                        geliştiriyorum.
                                                     </p>
                                                     <h2>Benimle Çalışmanın Avantajları</h2>
                                                     <p>
-                                                        Freelance bir yazılımcı ile çalışmak, esnek ve maliyet etkin bir
-                                                        çözüm sağlar. Tüm süreç boyunca doğrudan iletişim kurabilir,
-                                                        projeniz için tamamen özelleştirilmiş bir hizmet alabilirsiniz.
+                                                        Profesyonel bir web tasarım ofisiyle çalışarak işletmenizi
+                                                        dijital dünyada bir adım öne çıkarabilirsiniz. Özel ve
+                                                        kişiselleştirilmiş çözümlerimle hedeflerinize ulaşmanıza yardımcı
+                                                        oluyorum.
                                                     </p>
                                                 </div>
                                             </div>

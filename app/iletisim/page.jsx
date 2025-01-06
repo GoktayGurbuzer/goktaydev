@@ -1,5 +1,9 @@
-import Footer1 from "@/components/footers/Footer1";
-
+import React from "react";
+import Faq from "@/components/common/Faq";
+import Contact from "@/components/homes/home-5/Contact";
+import {boldMultipageDark, menuItemsDark} from "@/data/menu";
+import Header2 from "@/components/headers/Header2";
+import Footer5 from "@/components/footers/Footer5";
 import dynamic from "next/dynamic";
 
 const ParallaxContainer = dynamic(
@@ -8,17 +12,6 @@ const ParallaxContainer = dynamic(
     ssr: false, // Disable server-side rendering
   }
 );
-
-import Header1Multipage from "@/components/headers/Header1Multipage";
-
-import React from "react";
-
-import Faq from "@/components/common/Faq";
-import Contact from "@/components/homes/home-5/Contact";
-import Map from "@/components/common/Map";
-import {boldMultipageDark, menuItemsDark} from "@/data/menu";
-import Header2 from "@/components/headers/Header2";
-import Footer5 from "@/components/footers/Footer5";
 
 export const metadata = {
   title:

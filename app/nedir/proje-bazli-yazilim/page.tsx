@@ -5,6 +5,7 @@ import React from "react";
 import Footer5 from "@/components/footers/Footer5";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import Contact from "@/components/homes/home-5/Contact";
 
 const ParallaxContainer = dynamic(
     () => import("@/components/common/ParallaxContainer"),
@@ -91,7 +92,7 @@ export default function MainBlogSinglePageFullWidthDark({ params }) {
                                                             className="wow charsAnimIn"
                                                             data-splitting="chars"
                                                         >
-                                                            <AnimatedText text={title} />
+                                                            <AnimatedText text={title}/>
                                                         </span>
                                                     </h1>
                                                 </div>
@@ -120,11 +121,15 @@ export default function MainBlogSinglePageFullWidthDark({ params }) {
                                                         yazılıma yönelmesinin birkaç önemli nedeni vardır:
                                                     </p>
                                                     <ul>
-                                                        <li>**Özelleştirme:** İhtiyaçlarınıza özel çözümler geliştirilir.</li>
-                                                        <li>**Esneklik:** İşletmenizin büyümesine ve değişen
-                                                            ihtiyaçlarına uyum sağlar.</li>
-                                                        <li>**Uzmanlık:** Alanında uzman bir ekip tarafından
-                                                            geliştirilir.</li>
+                                                        <li>Özelleştirme: İhtiyaçlarınıza özel çözümler
+                                                            geliştirilir.
+                                                        </li>
+                                                        <li>Esneklik: İşletmenizin büyümesine ve değişen
+                                                            ihtiyaçlarına uyum sağlar.
+                                                        </li>
+                                                        <li>Uzmanlık: Alanında uzman bir ekip tarafından
+                                                            geliştirilir.
+                                                        </li>
                                                     </ul>
                                                     <Image
                                                         src="https://images.unsplash.com/photo-1532522750741-628fde798c73?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -179,10 +184,16 @@ export default function MainBlogSinglePageFullWidthDark({ params }) {
                                     </div>
                                 </div>
                             </section>
-                            <hr className="mt-0 mb-0 white" />
+                            <section
+                                className="page-section bg-dark-1 light-content pt-0"
+                                id="contact"
+                            >
+                                <Contact/>
+                            </section>
+                            <hr className="mt-0 mb-0 white"/>
                         </main>
                         <footer className="footer-1 bg-dark-2 light-content">
-                            <Footer5 />
+                            <Footer5/>
                         </footer>
                     </div>
                 </div>

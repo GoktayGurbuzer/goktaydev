@@ -65,8 +65,8 @@ export default function Home2MainDemoMultiPageDark() {
                           src="/assets/images/full-width-images/section-bg-13.jpg"
                           alt="Full stack Web Developer & Freelance Çözümler Sunuyorum."
                           title="Full stack Web Developer & Freelance Çözümler Sunuyorum."
-                          layout="fill" // Tüm konteynırı kaplar
-                          objectFit="cover" // Görseli düzgün bir şekilde yerleştirir
+                          fill
+                          style={{ objectFit: 'cover' }}
                           priority // LCP için kritik görsellerde öncelik verir
                       />
                       <Hero />

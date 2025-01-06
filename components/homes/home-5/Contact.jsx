@@ -145,7 +145,6 @@ export default function Contact() {
                   placeholder="Size nasıl yardımcı olabilirim?"
                   value={formData.message}
                   onChange={handleChange}
-                  defaultValue={""}
               />
             </div>
             <div>
