@@ -55,7 +55,7 @@ export default function Header2({ links }) {
         </ul>
         <ul className="items-end clearlist local-scroll">
           <li>
-            <a href="/iletisim" className="opacity-1 no-hover">
+            <a href="https://wa.me/+905077270909?text=Web%20Sitesi%20Yapt%C4%B1rmak%20%C4%B0stiyorum." className="opacity-1 no-hover">
               <span
                 className="btn btn-mod btn-small btn-border btn-border-white btn-circle ttn"
                 data-btn-animate="y"

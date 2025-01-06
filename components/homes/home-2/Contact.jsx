@@ -156,7 +156,7 @@ export default function Contact({ heading }) {
             </div>
             <div>
               <ReCAPTCHA
-                  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY} // Site anahtarı
+                  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ''} // Site anahtarı
                   onChange={handleCaptchaChange}
               />
             </div>
